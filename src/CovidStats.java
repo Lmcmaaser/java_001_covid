@@ -19,6 +19,7 @@ public class CovidStats {
             e.printStackTrace();
         }
 
-        System.out.println(covid19.length);
+        System.out.println(covid19);
+        // ALL CODE TO WORK WITH THE ARRAY GOES HERE
     }
 }
