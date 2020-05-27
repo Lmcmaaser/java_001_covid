@@ -19,7 +19,22 @@ public class CovidStats {
             e.printStackTrace();
         }
 
-        System.out.println(covid19);
+
         // ALL CODE TO WORK WITH THE ARRAY GOES HERE
+
+        int[] dailyCaseCount = new int[covid19.length];
+        int previousDayValue = 0;
+        for(int i = 0; i < covid19.length; i = i + 1) {
+            int dailyIncrease = covid19[i] - previousDayValue;
+            dailyCaseCount[i] = dailyIncrease;
+            previousDayValue = covid19[i];
+            System.out.println(dailyIncrease);
+        }
+
+        for(int n: dailyCaseCount) {
+            System.out.println(n);
+        }
+
+
     }
 }
